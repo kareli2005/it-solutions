@@ -26,13 +26,13 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/About-Us' element={<AboutUs />} />
-        <Route path='/Portfolio' element={<Portfolio />} />
-        <Route path='/Contact-Us' element={<Contact />} />
+        <Route path='/it-solutions' element={<Home />} />
+        <Route path='/it-solutions/About-Us' element={<AboutUs />} />
+        <Route path='/it-solutions/Portfolio' element={<Portfolio />} />
+        <Route path='/it-solutions/Contact-Us' element={<Contact />} />
         {
           services.map((service, key) => (
-            <Route key={key} path={'/' + service.link} element={<ServicesPage />} />  
+            <Route key={key} path={'/it-solutions/' + service.link} element={<ServicesPage />} />  
           ))
         }
       </Routes>

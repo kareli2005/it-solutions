@@ -8,19 +8,19 @@ import AboutUs from './Pages/about-us/AboutUs';
 import Portfolio from './Pages/portfolio/Portfolio';
 import Contact from './Pages/contact/Contact';
 import ServicesPage from './Pages/services/ServicesPage';
-import useDocumentTitle from './useDocumentTitle';
+// import useDocumentTitle from './useDocumentTitle';
 import { services } from './data';
 
 function App() {
 
-  const location = useLocation()
-  const currentUrl = location.pathname
-  const parts = currentUrl.split('/')
-  const pathAfterFirstSlash = parts.slice(1).join('/')
-  const formattedPath = pathAfterFirstSlash.replace(/-/g, ' ')
-  const title = formattedPath? ` - ${formattedPath}` : ''
+  // const location = useLocation()
+  // const currentUrl = location.pathname
+  // const parts = currentUrl.split('/')
+  // const pathAfterFirstSlash = parts.slice(1).join('/')
+  // const formattedPath = pathAfterFirstSlash.replace(/-/g, ' ')
+  // const title = formattedPath? ` - ${formattedPath}` : ''
   
-  useDocumentTitle(`IT-Solutions ${title}`)
+  // useDocumentTitle(`IT-Solutions ${title}`)
 
   return (
     <div className="App">

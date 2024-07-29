@@ -2,8 +2,11 @@ import React, { useEffect } from 'react'
 import ContactTeamComponent from './ContactTeamComponent'
 import AboutCompanyComponent from './AboutCompanyComponent'
 import GoogleMapComponent from './GoogleMapComponent'
+import useDocumentTitle from '../../useDocumentTitle'
 
 const Contact = () => {
+
+  useDocumentTitle('IT - Solutions')
 
   useEffect(() => {
     window.scrollTo({

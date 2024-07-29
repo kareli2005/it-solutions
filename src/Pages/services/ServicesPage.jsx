@@ -4,7 +4,9 @@ import ServicesComponent from './ServicesComponent'
 import { services } from '../../data'
 
 const ServicesPage = () => {
+
   const currentPath = window.location.pathname
+  console.log(currentPath)
 
   useEffect(() => {
     window.scrollTo({
@@ -17,7 +19,7 @@ const ServicesPage = () => {
 
       {
         services.map((item, key) => {
-          if (currentPath === ('/' + item.link)) return (
+          if (currentPath === ('/it-solutions/' + item.link)) return (
             <div key={key}>
               <ServicesComponent item={item} />
               <WhoWeAre />

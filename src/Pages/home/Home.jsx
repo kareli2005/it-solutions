@@ -3,14 +3,17 @@ import Slider from './components/Slider'
 import Services from './components/Services'
 import RecentlyCreated from './components/RecentlyCreated'
 import LatestPortfolioItems from './components/LatestPortfolioItems'
-import { homeServicesList } from '../../data'
 import ServicesWithImg from './components/ServicesWithImg'
 import AboutUsComponent from './components/AboutUsComponent'
 import ContactTeam from './components/ContactTeam'
 import AboutCompany from './components/AboutCompany'
+import useDocumentTitle from '../../useDocumentTitle'
+import { homeServicesList } from '../../data'
 import './components/Animations.css'
 
 const Home = () => {
+
+  useDocumentTitle('IT-Solutions')
 
   useEffect(() => {
     window.scrollTo({

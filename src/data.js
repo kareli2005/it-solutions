@@ -151,49 +151,49 @@ export const services = [
     title: 'Web Design',
     link: 'Web-Design',
     description: 'Our designers will easily develop high-quality and sophisticated design for your webpage.',
-    alt: '/Web Design',
+    alt: 'Web Design',
     img: webdesign2
   },
   {
     title: 'Print Design',
     link: 'Print-Design',
     description: 'We offer development of design for variety of products: company logos, flyers, books. Performed job will be done with interesting vision of our designers and of course these visions will be matched with your taste.',
-    alt: '/Print Design',
+    alt: 'Print Design',
     img: pdesign
   },
   {
     title: 'Facebook Apps',
     link: 'Facebook-Apps',
     description: 'Make your Facebook page more diverse with high-quality and interesting applications. Facebook application is the best way to introduce your Facebook page to more customers and we are ready to take part in this process.',
-    alt: '/Facebook Apps',
+    alt: 'Facebook Apps',
     img: fbapps
   },
   {
     title: 'Web Development',
     link: 'Web-Development',
     description: 'Today, real modern and virtual worlds are combined. If your occupation, work or even hobby is not presented in virtual world by website, this means that unfortunately you have not kept up with the modern trends. IT Solutions is the bridge between you and virtual world. We offer you development of any kind of web page, including web design, web development and web placement. Please visit our portfolio before contacting us.',
-    alt: '/Web Development',
+    alt: 'Web Development',
     img: webdev
   },
   {
     title: 'Server Infrastructure',
     link: 'Server-Infrastructure',
     description: 'Server infrastructure : server rooms planning, equipment , setup of server operating systems and services, consulting , troubleshooting and services are really our strong point . Please contact us, if you really want to have a guaranteed continuity business processes in the company or you just want to be proud of the fact that " everything works excellent at yours ".',
-    alt: '/Server Infrastructure',
+    alt: 'Server Infrastructure',
     img: bservers
   },
   {
     title: 'Computer Networks',
     link: 'Computer-Networks',
     description: 'The network infrastructure is not only the so-called Switch, router, Wi-Fi, cable, network adapter, and network printer. All these devices must be selected and configured by professionals. Also professional must help to plan and arrange infrastructure.',
-    alt: '/Computer Networks',
+    alt: 'Computer Networks',
     img: compnetworks
   },
   {
     title: 'IP Telephony',
     link: 'IP-Telephony',
     description: '-	Do not hold up the phone, I\'m waiting for very important call from companion… <br/>- Please harry up to answer phone, do not make customer to wait… <br/>Have you ever had such situation in your office? Feel the discomfort from unorganized phone system? You will solve this connectivity problem in your office with modern IP telephone system.' ,
-    alt: '/IPTelephonnny',
+    alt: 'IPTelephonnny',
     img: iptelephony
   },
   {
@@ -207,35 +207,35 @@ export const services = [
     title: 'Computer Equipment',
     link: 'Computer-Equipment',
     description: 'We provide a variety of computer hardware, network and peripheral advices for your office, houses and cottages. Also we offer some technics for server infrastructure.',
-    alt: '/omputer Equipment',
+    alt: 'omputer Equipment',
     img: cmphrdw
   },
   {
     title: 'Network Security',
     link: 'Network-Security',
     description: 'Make your network more secure with the help of our network engineers. We offer any type of network design, the service and troubleshooting.',
-    alt: '/Network Security',
+    alt: 'Network Security',
     img: netsec
   },
   {
     title: 'Media Streaming',
     link: 'Media-Streaming',
     description: 'IT Solutions offers the installation of surveillance (hidden) cameras, arrangement of media servers and service of video content delivery to any location.',
-    alt: '/Media Streaming',
+    alt: 'Media Streaming',
     img: medstream
   },
   {
     title: 'IT Support',
     link: 'IT-Support',
     description: 'We provide operating systems, different software and antivirus systems for your computer. Our services cover a wide range of IT support.',
-    alt: '/It Support',
+    alt: 'It Support',
     img: itsupport
   },
   {
     title: 'FB Page Administration',
     link: 'FB-Page-Administration',
     description: 'Save your valuable time and energy. We will create and administrate your Facebook page.',
-    alt: '/FB Page Administration',
+    alt: 'FB Page Administration',
     img: fbpageadm
   }
 ]

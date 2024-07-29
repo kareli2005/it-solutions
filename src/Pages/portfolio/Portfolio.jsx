@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import WhoWeAre from '../../components/WhoWeAre'
-import { portfolioItems } from '../../data'
 import PortfolioItem from '../../components/PortfolioItem'
+import useDocumentTitle from '../../useDocumentTitle'
+import { portfolioItems } from '../../data'  
 
 const Portfolio = () => {
+
+  useDocumentTitle('IT - Solutions')
 
   const [closedItem, setClosedItem] = useState(null)
   const [currentItem, setCurrentItem] = useState(null)

@@ -1,7 +1,10 @@
 import React from 'react';
+import useDocumentTitle from '../../useDocumentTitle'
 import './ServicesPage.css';
 
 const ServicesComponent = ({ item }) => {
+
+  useDocumentTitle(`IT-Solutions - ${item.alt}`)
 
   return (
     <div className='w-full h-auto flex justify-center items-center flex-col p-4 md:p-8 lg:px-0'>

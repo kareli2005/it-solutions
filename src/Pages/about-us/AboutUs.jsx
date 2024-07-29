@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react'
-import './AboutUs.css'
 import WhoWeAre from '../../components/WhoWeAre'
+import useDocumentTitle from '../../useDocumentTitle'
+import './AboutUs.css' 
 
 const AboutUs = () => {
+
+  useDocumentTitle('IT - Solutions')
 
   useEffect(() => {
     window.scrollTo({

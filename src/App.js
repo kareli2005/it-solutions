@@ -1,6 +1,6 @@
 import './App.css';
-import { Routes, Route } from 'react-router-dom';
-import Home from './Pages/home/Home'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Pages/home/Home';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
@@ -11,24 +11,25 @@ import ServicesPage from './Pages/services/ServicesPage';
 import { services } from './data';
 
 function App() {
-
   return (
-    <div className="App">
-      <Header />
-      <Routes>
-        <Route path='/it-solutions' element={<Home />} />
-        <Route path='/it-solutions/About-Us' element={<AboutUs />} />
-        <Route path='/it-solutions/Portfolio' element={<Portfolio />} />
-        <Route path='/it-solutions/Contact-Us' element={<Contact />} />
-        {
-          services.map((service, key) => (
-            <Route key={key} path={'/it-solutions/' + service.link} element={<ServicesPage />} />  
-          ))
-        }
-      </Routes>
-      <Footer />
-      <BackToTop />
-    </div>
+    <Router>
+      <div className="App">
+        <Header />  
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/About-Us' element={<AboutUs />} />
+          <Route path='/Portfolio' element={<Portfolio />} />
+          <Route path='/Contact-Us' element={<Contact />} />
+          {
+            services.map((service, key) => (
+              <Route key={key} path={'/' + service.link} element={<ServicesPage />} />  
+            ))
+          }
+        </Routes>
+        <Footer />
+        <BackToTop />
+      </div>
+    </Router>
   )
 }
 

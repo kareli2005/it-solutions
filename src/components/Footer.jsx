@@ -81,7 +81,7 @@ const Footer = () => {
               <div className='grid grid-cols-2 gap-x-4 gap-y-1'>
                 {
                   services.map((service, key) => (
-                    <p onClick={() => navigate('/it-solutions/' + service.link)} key={key} className='w-full flex justify-start items-center text-[#5e5e5e] text-sm cursor-pointer duration-300 hover:text-blue-400'>
+                    <p onClick={() => navigate('/' + service.link)} key={key} className='w-full flex justify-start items-center text-[#5e5e5e] text-sm cursor-pointer duration-300 hover:text-blue-400'>
                       {service.title}
                     </p>
                   ))
@@ -123,8 +123,8 @@ const Footer = () => {
 
       <div className='w-full bg-white flex justify-center items-center'>
         <div className='w-full max-w-[1000px] px-4 md:px-8 lg:px-0 py-4 flex flex-wrap justify-start items-center gap-8'>
-          <img onClick={() => navigate('/it-solutions/')} src={footerLogo} alt="/logo-footer.png" className='opacity-80 hover:opacity-100 cursor-pointer hidden md:flex' />
-          <p className='text-[#8e8d8d] font-arial-sans-serif text-xs text-start'>Copyright © 2020 <span onClick={() => navigate('/it-solutions/')} className='font-bold text-[#6c6c6c] cursor-pointer hover:underline'>IT-Solutions.ge</span> All rights reserved.</p>
+          <img onClick={() => navigate('/')} src={footerLogo} alt="/logo-footer.png" className='opacity-80 hover:opacity-100 cursor-pointer hidden md:flex' />
+          <p className='text-[#8e8d8d] font-arial-sans-serif text-xs text-start'>Copyright © 2020 <span onClick={() => navigate('/')} className='font-bold text-[#6c6c6c] cursor-pointer hover:underline'>IT-Solutions.ge</span> All rights reserved.</p>
         </div>
       </div>
     </div>

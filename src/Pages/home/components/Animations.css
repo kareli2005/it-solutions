@@ -1,0 +1,178 @@
+.wrapper-perspective {
+  perspective: 1000px;
+}
+
+@keyframes flyUpAnimation {
+  0% {
+    transform: rotateX(-90deg) translateY(50%);
+    opacity: 1;
+  }
+  100% {
+    transform: rotateX(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .fly-up {
+    animation: flyUpAnimation 0.8s forwards;
+    bottom: 0;
+    transform-style: preserve-3d;
+  }
+}
+
+/* services */
+@keyframes servicesAnimation {
+  0% {
+    transform: scale(0.8) translateY(-200px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes facebookAppsAnimation {
+  0% {
+    transform: rotateZ(90deg) rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(0) rotateZ(0);
+  }
+}
+
+.services,
+.facebook-apps {
+  animation: none;
+}
+
+@media (min-width: 768px) {
+  .services {
+    animation: servicesAnimation 1s forwards;
+  }
+  
+  .facebook-apps {
+    animation: facebookAppsAnimation 0.8s forwards;
+  }
+}
+
+/* recently created */
+.leave-gallery-item {
+  animation: leaveGalleryItem 1s forwards;
+}
+
+@keyframes leaveGalleryItem {
+  0% {
+    transform: translateX(0) rotateZ(0);
+    z-index: 100;
+  }
+  50% {
+    transform: translateX(-110%) rotateZ(-10deg);
+    z-index: 0;
+  }
+  100% {
+    transform: translateX(0) rotateZ(0);
+  }
+}
+
+.mbg-div {
+  border: solid 2px #E5E5E5;
+  background-color: white;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+}
+
+.fbg-div {
+  width: 100%;
+  height: 100%;
+  border: solid 2px #E5E5E5;
+  transform: rotate(2deg);
+  background-color: white;
+  position: absolute;
+  z-index: 50;
+}
+
+.sbg-div {
+  width: 100%;
+  height: 100%;
+  border: solid 2px #E5E5E5;
+  transform: rotate(-2deg);
+  background-color: white;
+  position: absolute;
+  z-index: 50;
+}
+
+@media (max-width: 1000px) {
+  .fbg-div,
+  .sbg-div {
+    display: none;
+  }
+}
+
+/* services with img */
+@keyframes rotateItemAnimation {
+  0% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .rotate-services-item {
+    animation: rotateItemAnimation 0.5s forwards;
+    transform-style: preserve-3d;
+  }
+}
+
+/* contact-team */
+@keyframes rotateContactTeamAnimation {
+  0% {
+    transform: rotateX(-90deg) translateY(50%);
+    opacity: 1;
+  }
+  100% {
+    transform: rotateX(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .rotate-contact-team {
+    animation: rotateContactTeamAnimation 1s forwards;
+    bottom: 0;
+    transform-style: preserve-3d;
+  }
+}
+
+/* about our company */
+
+.aboutcompany-width {
+  width: 100%;
+}
+
+@keyframes slideLeftToRight {
+  0% {
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@media (min-width: 768px) {
+  .slide-in-about-company {
+    animation: slideLeftToRight 1s forwards;
+  }
+}
+
+@media (min-width: 450px) {
+  .aboutcompany-width {
+    width: 300px;
+  }
+}

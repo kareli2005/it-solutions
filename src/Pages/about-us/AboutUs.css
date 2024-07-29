@@ -1,0 +1,30 @@
+.description {
+  width: 100%;
+  columns: 3;
+  gap: 16px;
+  text-align: justify;
+  color: #5e5e5e;
+  font-size: 11px;
+}
+
+@media (max-width: 450px) {
+  .description {
+    columns: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .description {
+    font-size: 13px;
+    animation: aboutUsAnimation 1s forwards;
+  }
+}
+
+@keyframes aboutUsAnimation {
+  0% {
+    transform: scale(0.8) translateY(-100px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}

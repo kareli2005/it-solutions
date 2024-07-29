@@ -1,15 +1,13 @@
 import React from 'react'
 import { FaFacebook, FaGooglePlus } from "react-icons/fa";
-import { IoMdPin } from "react-icons/io";
-import footerMap from '../assets/images/footer-map.png'
+import footerMap from '../assets/icons/footer-map.png'
 import { services } from '../data';
 import { useNavigate } from 'react-router-dom';
-import footerLogo from '../assets/images/logo-footer.png'
+import footerLogo from '../assets/icons/logo-footer.png'
+import pinIcon from '../assets/icons/map-pin.png'
 
 
 const Footer = () => {
-
-
   const navigate = useNavigate()
   
   const handleOpenMap = () => {
@@ -21,8 +19,8 @@ const Footer = () => {
 
   return (
     <div className='w-full flex flex-col justify-center items-center font-sans'>
-      <div className='w-full bg-[#121212] flex justify-center items-center'>
-        <div className='w-full max-w-[1024px] py-6 px-8 lg:px-0 flex'>
+      <div className='w-full bg-[#1c1c1c] flex justify-center items-center'>
+        <div className='w-full max-w-[1000px] px-4 md:px-8 lg:px-0 py-6 flex'>
 
           <div className='lg:w-1/3 md:w-1/2 w-full flex flex-col justify-center items-start'>
             <h1 className='text-white font-bold text-lg'>SOCIAL NETWORKS</h1>
@@ -42,8 +40,8 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='w-full bg-[#1c1c1c] flex justify-center items-center'>
-        <div className='w-full max-w-[1024px] py-6 px-8 lg:px-0 flex'>
+      <div className='w-full bg-[#232323] flex justify-center items-center'>
+        <div className='w-full max-w-[1000px] px-4 md:px-8 lg:px-0 py-6 flex'>
 
           <div className='lg:w-1/3 md:w-1/2 w-full flex flex-col justify-start items-center gap-4 text-[#c2c2c2]'>
 
@@ -95,10 +93,10 @@ const Footer = () => {
 
           <div className='lg:w-1/3 md:w-1/2 hidden md:flex justify-start items-center gap-4 text-[#c2c2c2]'>
 
-            <div className='flex justify-start items-center relative'>
-              <div onClick={handleOpenMap}  className='w-auto h-auto flex justify-start items-center cursor-pointer'>
-                <img src={footerMap} />
-                <IoMdPin className='top-[34px] left-[88px] text-4xl text-red-600 hover:text-red-500 transform transition-transform hover:animate-bounce duration-500 absolute' />
+            <div className='flex justify-start items-center relative w-full'>
+              <div onClick={handleOpenMap} className='w-full h-auto flex justify-start items-center cursor-pointer'>
+                <img src={footerMap} alt='/map' className='w-full h-auto:' />
+                <img src={pinIcon} alt="/pin-icon" className='top-[18%] left-[51%] md:top-[23%] md:left-[54%] lg:top-[18%] lg:left-[51%] absolute' />
               </div>
             </div>
 
@@ -124,8 +122,8 @@ const Footer = () => {
       </div>
 
       <div className='w-full bg-white flex justify-center items-center'>
-        <div className='w-full max-w-[1024px] py-6 px-8 lg:px-0 flex justify-start items-center gap-8'>
-          <img onClick={() => navigate('/')} src={footerLogo} alt="/logo-footer.png" className='opacity-80 hover:opacity-100 cursor-pointer' />
+        <div className='w-full max-w-[1000px] px-4 md:px-8 lg:px-0 py-4 flex flex-wrap justify-start items-center gap-8'>
+          <img onClick={() => navigate('/')} src={footerLogo} alt="/logo-footer.png" className='opacity-80 hover:opacity-100 cursor-pointer hidden md:flex' />
           <p className='text-[#8e8d8d] font-arial-sans-serif text-xs text-start'>Copyright © 2020 <span onClick={() => navigate('/')} className='font-bold text-[#6c6c6c] cursor-pointer hover:underline'>IT-Solutions.ge</span> All rights reserved.</p>
         </div>
       </div>

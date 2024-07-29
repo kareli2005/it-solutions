@@ -1,0 +1,50 @@
+.wrapper-perspective {
+  perspective: 1000px;
+}
+
+@keyframes flyUpAnimation {
+  0% {
+    transform: rotateX(-90deg) translateY(50%);
+    opacity: 1;
+  }
+  100% {
+    transform: rotateX(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .fly-up {
+    animation: flyUpAnimation 0.8s forwards;
+    bottom: 0;
+    transform-style: preserve-3d;
+  }
+}
+
+.aboutcompany-width {
+  width: 100%;
+}
+
+@keyframes slideLeftToRight {
+  0% {
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@media (min-width: 768px) {
+  .slide-in-about-company {
+    animation: slideLeftToRight 1s forwards;
+  }
+}
+
+@media (min-width: 450px) {
+  .aboutcompany-width {
+    width: 300px;
+  }
+}

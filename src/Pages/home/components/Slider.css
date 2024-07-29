@@ -1,0 +1,150 @@
+/* slide-container */
+
+.landing-slide {
+  opacity: 100;
+}
+
+.enter-slide {
+  animation: enterSlideAnimation 1s forwards;
+  z-index: 10;
+}
+
+.reverse-enter-slide {
+  animation: reverseEnterSlideAnimation 1s forwards;
+  z-index: 10;
+}
+
+.leave-slide {
+  opacity: 1;
+}
+
+.reverse-leave-slide {
+  animation: reverseLeaveSlideAnimation 2s forwards;
+}
+
+@keyframes enterSlideAnimation {
+  0% {
+    opacity: 1;
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes reverseEnterSlideAnimation {
+  0% {
+    opacity: 1;
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes leaveSlideAnimation {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+@keyframes reverseLeaveSlideAnimation {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+/* title img */
+.enter-title-img {
+  animation: enterTitleImgAnimation 1s forwards;
+}
+
+.leave-title-img {
+  animation: leaveTitleImgAnimation 1s forwards;
+}
+
+.first-enter-title-img {
+  animation: firstEnterTitleImgAnimation 1.5s forwards; 
+}
+
+@keyframes enterTitleImgAnimation {
+  0% {
+    transform: translateY(-300%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes leaveTitleImgAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-300%);
+  }
+}
+
+@keyframes firstEnterTitleImgAnimation {
+  0% {
+    transform: translateY(-300%);
+  }
+  50% {
+    transform: translateY(-300%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* other img */
+.enter-img {
+  animation: enterImgAnimation 1s forwards;
+}
+
+.leave-img {
+  animation: leaveImgAnimation 1s forwards;
+}
+
+.first-enter-img {
+  animation: firstEnterImgAnimation 1.5s forwards; 
+}
+
+@keyframes enterImgAnimation {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes leaveImgAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes firstEnterImgAnimation {
+  0% {
+    transform: translateY(100%);
+  }
+  50% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

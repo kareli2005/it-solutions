@@ -81,7 +81,7 @@ const Footer = () => {
               <div className='grid grid-cols-2 gap-x-4 gap-y-1'>
                 {
                   services.map((service, key) => (
-                    <p onClick={() => navigate('/' + service.link)} key={key} className='w-full flex justify-start items-center text-[#5e5e5e] text-sm cursor-pointer duration-300 hover:text-blue-400'>
+                    <p onClick={() => navigate(service.link)} key={key} className='w-full flex justify-start items-center text-[#5e5e5e] text-sm cursor-pointer duration-300 hover:text-blue-400'>
                       {service.title}
                     </p>
                   ))

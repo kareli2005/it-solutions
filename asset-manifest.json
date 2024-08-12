@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/it-solutions/static/css/main.b3ee24d2.css",
-    "main.js": "/it-solutions/static/js/main.a7131153.js",
+    "main.js": "/it-solutions/static/js/main.614b4532.js",
     "static/js/453.a580234d.chunk.js": "/it-solutions/static/js/453.a580234d.chunk.js",
     "static/media/rodos_big.jpg": "/it-solutions/static/media/rodos_big.576b0e5793c3f57817f5.jpg",
     "static/media/image-67.jpg": "/it-solutions/static/media/image-67.ce8ad74c85cf99795361.jpg",
@@ -129,11 +129,11 @@
     "static/media/footer-map.png": "/it-solutions/static/media/footer-map.9a170171c9579161bfd2.png",
     "index.html": "/it-solutions/index.html",
     "main.b3ee24d2.css.map": "/it-solutions/static/css/main.b3ee24d2.css.map",
-    "main.a7131153.js.map": "/it-solutions/static/js/main.a7131153.js.map",
+    "main.614b4532.js.map": "/it-solutions/static/js/main.614b4532.js.map",
     "453.a580234d.chunk.js.map": "/it-solutions/static/js/453.a580234d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b3ee24d2.css",
-    "static/js/main.a7131153.js"
+    "static/js/main.614b4532.js"
   ]
 }

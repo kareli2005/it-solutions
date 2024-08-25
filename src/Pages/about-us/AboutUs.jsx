@@ -18,7 +18,7 @@ const AboutUs = () => {
       <div className='w-full flex justify-center items-center py-8 px-4 md:px-8 lg:px-0'>
         <div className='w-full h-auto flex flex-col justify-center items-center max-w-[1000px]'> 
           <div className='gap-2 w-full text-center'>
-            <h1 className='w-full text-[#232323] font-arial-sans-serif text-[34px] md:text-[54px] uppercase duration-300'>About Us</h1>
+            <h1 className='w-full text-[#232323] font-arial-sans-serif text-[25px] sm:text-[34px] md:text-[54px] uppercase duration-300'>About Us</h1>
             <p className='w-full text-[#a9a9a9] font-arial-sans-serif text-[12px] md:text-xl uppercase duration-300'>A Bit About Us Or Send A Message</p>
           </div>
           <div className='h-[2px] w-1/2 bg-[#dbdbdb] m-8 opacity-30' />

@@ -55,15 +55,17 @@ const Home = () => {
       })
 
       // latest portfolio items
-      const portfolioItemsContainer = document.getElementById('portfolioItemsContainer')
-      const portfolioItemsContainerPosition = portfolioItemsContainer.getBoundingClientRect().top
-      if (portfolioItemsContainerPosition < screenPosition) {
-        const portfolioItemsElements = Array.from(portfolioItemsContainer.querySelectorAll(':scope > div'))  
-        portfolioItemsElements.forEach((element, index) => {
-          setTimeout(() => {
-            element.classList.add('fly-up')
-          }, index * 200)
-        })
+      const portfolioItemsContainer = document.querySelector('.item-clicked') || document.getElementById('portfolioItemsContainer')
+      if (portfolioItemsContainer) {
+        const portfolioItemsContainerPosition = portfolioItemsContainer.getBoundingClientRect().top
+        if (portfolioItemsContainerPosition < screenPosition) {
+          const portfolioItemsElements = Array.from(portfolioItemsContainer.querySelectorAll(':scope > div'))
+          portfolioItemsElements.forEach((element, index) => {
+            setTimeout(() => {
+              element.classList.add('fly-up')
+            }, index * 200)
+          })
+        }
       }
 
       // contact team

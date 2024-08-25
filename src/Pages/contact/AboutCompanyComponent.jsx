@@ -18,7 +18,7 @@ const AboutCompanyComponent = () => {
     <div className='w-full h-auto flex justify-center items-center py-8'>
       <div className='w-full max-w-[1000px] h-auto flex flex-col text-center justify-center items-center px-4 md:px-8 lg:px-0'>
         <div className='gap-2 w-full'>
-          <h1 className='text-[#232323] text-[34px] md:text-[54px] uppercase font-arial-sans-serif'>About Our Company</h1>
+          <h1 className='text-[#232323] text-[25px] sm:text-[34px] md:text-[54px] uppercase font-arial-sans-serif'>About Our Company</h1>
           <p className='text-[#a9a9a9] text-[12px] md:text-xl uppercase font-arial-sans-serif'>A Bit About Us Or Send A Message</p>
         </div>
         <div className='h-[1px] w-1/2 bg-[#eaeaea] m-6' />

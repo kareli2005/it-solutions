@@ -4,7 +4,7 @@ const AboutUsComponent = () => {
   return (
     <div className='w-full flex justify-center items-center py-10 md:py-20 bg-aboutus-bg bg-cover bg-center'>
       <div className='w-full h-auto flex flex-col justify-center items-center max-w-[1000px]'> 
-        <h1 className='uppercase text-white text-[34px] md:text-[54px] font-arial-sans-serif'>
+        <h1 className='uppercase text-white text-[25px] sm:text-[34px] md:text-[54px] font-arial-sans-serif'>
           About us
         </h1>
         <div className='h-[1px] w-1/2 bg-[#eaeaea] m-8 opacity-30' />

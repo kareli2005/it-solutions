@@ -25,7 +25,7 @@ const LatestPortfolioItems = () => {
   return (
     <div  className='w-full h-auto bg-white text-[#5e5e5e] flex flex-col items-center justify-start py-8 md:py-16 shadow-md'>
       <div className='flex flex-col justify-center items-center gap-4 p-8 max-w-[1000px]'>
-        <h1 className='text-[25px] leading-[27px] sm:text-[34px] sm:leading-[35px] md:text-[54px] md:leading-[56px] text-[#232323] text-center uppercase'>
+        <h1 className='leading-[27px] text-[25px] sm:text-[34px] sm:leading-[35px] md:text-[54px] md:leading-[56px] text-[#232323] text-center uppercase'>
           Latest portfolio items
         </h1>
         <p className='uppercase text-[12px] md:text-[20px] md:leading-[22px] text-[#a9a9a9] text-center'>

@@ -10,7 +10,6 @@ const ServicesPage = () => {
 
   // Log the current path
   useEffect(() => {
-    console.log(currentPath)
     window.scrollTo({
       top: 0,
     })

@@ -65,11 +65,11 @@ const GoogleMapComponent = () => {
   }, [])
 
   if (error) {
-    return <div className='w-full h-[300px] md:h-[400px] flex items-center justify-center'>Error getting the map</div>
+    return <div className='w-full h-[200px] sm:h-[300px] md:h-[400px] flex items-center justify-center'>Error getting the map</div>
   }
 
   return (
-    <div ref={mapContainerRef} className='w-full h-[300px] md:h-[400px]' />
+    <div ref={mapContainerRef} className='w-full h-[200px] sm:h-[300px] md:h-[400px]' />
   )
 }
 

@@ -40,7 +40,7 @@ const Portfolio = () => {
       <div className='w-full flex flex-col justify-center items-center py-8 px-4 md:px-8 lg:px-0 max-w-[1000px]'>
         <div className='w-full h-auto flex flex-col justify-center items-center'> 
           <div className='gap-2 w-full text-center'>
-            <h1 className='w-full text-[#232323] font-arial-sans-serif text-[34px] md:text-[54px] uppercase duration-300'>Our Portfolio</h1>
+            <h1 className='w-full text-[#232323] font-arial-sans-serif text-[25px] sm:text-[34px] md:text-[54px] uppercase duration-300'>Our Portfolio</h1>
             <p className='w-full text-[#a9a9a9] font-arial-sans-serif text-[12px] md:text-xl uppercase duration-300'>Project We Have Done</p>
           </div>
           <div className='h-[2px] w-1/2 bg-[#dbdbdb] m-8 opacity-30' />

@@ -48,7 +48,7 @@ const WhoWeAre = () => {
           <div className='grid grid-cols-2 max-w-max gap-x-2'>
             {
               services.map((service, key) => (
-                <p onClick={() => navigate('/' + service.link)} key={key} className='text-[#717171] text-[11px] lg:text-[13px] text-start cursor-pointer duration-300 hover:text-blue-400'>
+                <p onClick={() => navigate(service.link)} key={key} className='text-[#717171] text-[11px] lg:text-[13px] text-start cursor-pointer duration-300 hover:text-blue-400'>
                   {service.title}
                 </p>
               ))
